@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ˖ 𑣲 VSO Merch 2025-2026 ˚₊𖤐 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 🎨 Your Custom Colors */
+        :root {
+            --primary-color: #FF70A6;
+            --secondary-color: #FF9770;
+            --accent-color: #A0FF70;
+            --background-start: #70d6ff;
+            --background-end: #FF70A6;
+            --card-background: rgba(255, 255, 255, 0.95);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* ✨ Sparkle Animation */
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.1) 10px,
+                rgba(255, 255, 255, 0.1) 20px
+            );
+            animation: float 15s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateX(-100px) translateY(-100px); }
+            100% { transform: translateX(100px) translateY(100px); }
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.3em;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            font-weight: 400;
+        }
+
+        .viewer-notice {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid var(--accent-color);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .viewer-notice h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .viewer-notice p {
+            color: #666;
+            font-weight: 400;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .search-bar {
+            background: var(--card-background);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(255, 151, 112, 0.1);
+        }
+
+        .inventory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .item-card {
+            background: var(--card-background);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .item-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .item-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            border: 3px solid #f0f0f0;
+        }
+
+        .item-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .item-info p {
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .quantity-display {
+            background: linear-gradient(135deg, var(--accent-color), #8FE85C);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+
+        .qr-section {
+            background: linear-gradient(135deg, var(--secondary-color), #FF8A5C);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .qr-section h4 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        .qr-code {
+            font-size: 1.2em;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .no-items {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .no-items h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .no-items p {
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* 📱 Mobile Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .inventory-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✦ ♡ VSO Merch 2025-2026 ° ☆ ✦</h1>
+            <p>Keep track of the merch!</p>
+        </div>
+
+        <div class="viewer-notice">
+            <h3>👀 Board Member View</h3>
+            <p>This is a read-only view of our current merch inventory. Items are automatically synced from the main system.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="total-items">0</div>
+                <div class="stat-label">Total Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="total-quantity">0</div>
+                <div class="stat-label">Total Quantity</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="unique-products">0</div>
+                <div class="stat-label">Unique Products</div>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" class="search-input" id="search-input" placeholder="🔍 Search for items...">
+        </div>
+
+        <div class="inventory-grid" id="inventory-grid">
+            <!-- Items will be dynamically loaded here -->
+        </div>
+
+        <div class="no-items" id="no-items" style="display: none;">
+            <h3>📦 No Items Yet</h3>
+            <p>Merch items will appear here once they're added to the system.</p>
+        </div>
+
+        <div class="last-updated">
+            <p>Last updated: <span id="last-updated-time">Never</span></p>
+        </div>
+    </div>
+
+    <script>
+        // 🎆 Sparkle Effect
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.className = 'sparkle';
+            sparkle.style.left = Math.random() * 100 + '%';
+            sparkle.style.top = Math.random() * 100 + '%';
+            sparkle.style.animationDelay = Math.random() * 3 + 's';
+            document.body.appendChild(sparkle);
+            
+            setTimeout(() => {
+                sparkle.remove();
+            }, 3000);
+        }
+
+        // Create sparkles every 2 seconds
+        setInterval(createSparkle, 2000);
+
+        // 📊 Load Inventory Data
+        let inventory = [];
+        let filteredInventory = [];
+
+        function loadInventory() {
+            // Try to load from localStorage (same storage as main app)
+            const stored = localStorage.getItem('merchInventory');
+            if (stored) {
+                inventory = JSON.parse(stored);
+                filteredInventory = [...inventory];
+            } else {
+                inventory = [];
+                filteredInventory = [];
+            }
+            updateDisplay();
+        }
+
+        function updateStats() {
+            const totalItems = inventory.length;
+            const totalQuantity = inventory.reduce((sum, item) => sum + item.quantity, 0);
+            const uniqueProducts = new Set(inventory.map(item => item.name)).size;
+            
+            document.getElementById('total-items').textContent = totalItems;
+            document.getElementById('total-quantity').textContent = totalQuantity;
+            document.getElementById('unique-products').textContent = uniqueProducts;
+        }
+
+        function createItemCard(item) {
+            const card = document.createElement('div');
+            card.className = 'item-card';
+            card.innerHTML = `
+                <img src="${item.photo || 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0xMDAgNzVMMTI1IDEwMEgxMTJWMTI1SDg4VjEwMEg3NUwxMDAgNzVaIiBmaWxsPSIjOUNBM0FGIi8+Cjwvc3ZnPg=='}" 
+                      alt="${item.name}" class="item-photo">
+                <div class="item-info">
+                    <h3>${item.name}</h3>
+                    <p><strong>Description:</strong> ${item.description || 'No description'}</p>
+                    <div class="quantity-display">
+                        📦 Quantity: ${item.quantity}
+                    </div>
+                    ${item.location ? `
+                        <div class="qr-section">
+                            <h4>📍 Storage Location</h4>
+                            <div class="qr-code">${item.location}</div>
+                        </div>
+                    ` : ''}
+                    <p style="margin-top: 15px; font-size: 0.9em; color: #999;">
+                        Added: ${new Date(item.dateAdded).toLocaleDateString()}
+                    </p>
+                </div>
+            `;
+            return card;
+        }
+
+        function renderInventory() {
+            const grid = document.getElementById('inventory-grid');
+            const noItems = document.getElementById('no-items');
+            
+            grid.innerHTML = '';
+            
+            if (filteredInventory.length === 0) {
+                noItems.style.display = 'block';
+                grid.style.display = 'none';
+            } else {
+                noItems.style.display = 'none';
+                grid.style.display = 'grid';
+                
+                filteredInventory.forEach(item => {
+                    const card = createItemCard(item);
+                    grid.appendChild(card);
+                });
+            }
+        }
+
+        function updateDisplay() {
+            updateStats();
+            renderInventory();
+            
+            // Update last updated time
+            const lastUpdated = localStorage.getItem('merchLastUpdated');
+            if (lastUpdated) {
+                document.getElementById('last-updated-time').textContent = 
+                    new Date(lastUpdated).toLocaleString();
+            }
+        }
+
+        // 🔍 Search Functionality
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            if (searchTerm === '') {
+                filteredInventory = [...inventory];
+            } else {
+                filteredInventory = inventory.filter(item => 
+                    item.name.toLowerCase().includes(searchTerm) ||
+                    (item.description && item.description.toLowerCase().includes(searchTerm)) ||
+                    (item.location && item.location.toLowerCase().includes(searchTerm))
+                );
+            }
+            
+            renderInventory();
+        });
+
+        // 🔄 Auto-refresh every 30 seconds
+        setInterval(loadInventory, 30000);
+
+        // 🚀 Initialize
+        loadInventory();
+        
+        // Update timestamp when page loads
+        localStorage.setItem('merchLastUpdated', new Date().toISOString());
+    </script>
+</body>
+</html>
